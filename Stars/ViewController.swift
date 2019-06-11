@@ -27,18 +27,17 @@ class ViewController: UIViewController {
         let distance = Double(distanceString) else {
             return
         }
-        starController.addStar(named: name, withDistance: distance)
-        listStars()
         
+        starController.addStar(named: name, withDistance: distance)
+        starController.saveToPersistentStore()
     }
     
-    func listStars() {
+    @IBAction func listStarsButtonTapped(_ sender: UIButton) {
         var output = ""
         for star in starController.stars {
             output += "\(star.name) is \(star.distance) light years away. \n"
         }
         textView.text = output
-        
     }
 }
 
