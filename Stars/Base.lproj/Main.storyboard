@@ -43,6 +43,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-k1-PXw">
                                                 <rect key="frame" x="202" y="0.0" width="182" height="30"/>
                                                 <state key="normal" title="Create"/>
+                                                <connections>
+                                                    <action selector="addStarButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOg-H7-9RX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -65,6 +68,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceTextField" destination="Odb-A2-e4W" id="6zi-K0-kBB"/>
+                        <outlet property="nameTextField" destination="hog-nR-0AA" id="2xd-NN-Egs"/>
+                        <outlet property="textView" destination="hLn-e0-Zs3" id="acW-DS-g8R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
